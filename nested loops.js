@@ -262,7 +262,153 @@
 
 //  Outer Loop controling the inner loop
 
-//  First loop/outer loop depending on (Horizontal row)
-//  second loop/inner loop depending on (verticle column)
+//  First loop/outer loop depending on (Horizontal row/Line)
+//  second loop/inner loop depending on (verticle column/Line)
 
 
+for(var hour =1; hour<=5; hour++)
+{
+    for(var minute=1; minute<=60; minute++)
+    {
+        console.log("Minute :",minute);
+    }
+
+    console.log("Hour :",hour);
+}
+
+
+
+
+//  1 2 3 4 5
+//  1 2 3 4 5
+//  1 2 3 4 5
+//  1 2 3 4 5
+//  1 2 3 4 5
+
+for(var i=0; i<=5; i++)
+{
+    var str = "";
+
+    for(var j=1; j<=5; j++)
+    {
+        str += j+" ";
+    }
+    console.log(str);
+}
+
+
+
+
+//  Box-Model Printing
+
+// * * * * *
+// *       *
+// *       *
+// *       *
+// * * * * *
+
+for(var i=1; i<=5; i++)
+{
+    var str ="";
+
+    for(var j=1; j<=5; j++)
+    {
+        if(i==1 || i==5 || j==1 || j==5)
+        {
+            str += "*" +" ";
+        }
+        else
+        {
+            str += "  ";
+        }
+    }
+    console.log(str);
+}
+
+
+
+
+//  Conditions --> if(i==1 || i==5 || j==1)
+// * * * * *
+// *      
+// *       
+// *       
+// * * * * *
+
+
+
+//  Conditions --> if(i==5 || j==1)
+// * 
+// *      
+// *       
+// *       
+// * * * * *
+
+
+
+//  (N) Model Printing
+//  Conditions --> if(j==1 || j==5 || i==j)
+
+
+//  Opposite (N) Model Printing
+//  Conditions --> if(j==1 || j==5 || j==i)
+
+
+
+
+// 5 4 3 2 1
+// 5 4 3 2 1
+// 5 4 3 2 1
+// 5 4 3 2 1
+// 5 4 3 2 1
+
+for(var i=1; i<=5; i++)
+{
+    var bag = "";
+
+    for(var j=5; j>=1; j--)
+    {
+        bag += j +" ";
+    }
+    console.log(bag);
+}
+
+
+
+
+// 1
+// 1 2
+// 1 2 3
+// 1 2 3 4
+// 1 2 3 4 5
+
+for(var i=1; i<=5; i++)
+{
+    var bag = "";
+
+    for(var j=1; j<=i; j++)
+    {
+        bag += j +" ";
+    }
+    console.log(bag);
+}
+
+
+
+
+// 1
+// 2 2
+// 3 3 3
+// 4 4 4 4
+// 5 5 5 5 5
+
+for(var i=1; i<=5; i++)
+  {
+    var bag = "";
+    
+    for(var j=1; j<=i; j++)
+      {
+        bag += i+" ";
+      }
+    console.log(bag)
+}

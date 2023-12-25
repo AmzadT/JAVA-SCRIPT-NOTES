@@ -28,21 +28,21 @@
 alert("WelCome To Java-Script");
 document.write("Welcome To Web-Page");
 
-
 //  Attach Exeternal File:- <script scr="Here File Name"></script>
 
 
 
 
+// ** CLASS-NOTES **
 
 
 
-// keywords to declare a variable let, var and const
+// keywords to declare a variable let, var and const.
 
-let a; // decalare a variable
-a = 5; // assigning a value to the variable
+let a;  // decalare a variable
+a = 5;  // assigning a value to the variable
 
-let x = 10; // decalre and assign the value in the same line
+let x = 10;  // decalre and assign the value in the same line
 
 // console.log(a);
 // console.log(x);
@@ -50,19 +50,15 @@ let x = 10; // decalre and assign the value in the same line
 
 var sum = 20;
 // console.log(sum);
-var name = "Tanya"; // "1" -- > string anything in " " is a string
+var name = "Amzad"; // "1" -- > if I write anything inside that ("") it is always a string.
 
-const variable = "hello";
+
+const variable = "Hello";
 console.log(variable)
 
 
 
-
-
-
-
-
-// difference 
+// Difference :-
 
 // const
  // const a = 5; // declaring and const is same otherwise you will get error but you do it with let and var
@@ -72,14 +68,18 @@ console.log(variable)
 // console.log(name)
 
 
-// const place = "Delhi";
-// place = "Goa" // you can reassign the variable declare with const 
-// but we can do with let and var
+const place = "Delhi";
+place = "Goa" // you can reassign the variable declare with const, but we can do with let and var
 // console.log(place)
 
+
+
 // diff between let and var
+
 // try to use always let
+
 // scope global, local and block
+
 
 // let vs var
 
@@ -88,11 +88,6 @@ console.log(variable)
 
 // console.log(a)
 // let a = 5;
-
-
-
-
-
 
 
 
@@ -106,13 +101,19 @@ console.log(variable)
 // storage, data processing, and business logic.
 
 
+// JavaScript is a programming language that represents one of the three core language used to develop websites, alongside HTML and CSS. whereas HTML and CSS give a website structure and style, JavaScript lets you add functionality and behaviors to your website. this allows visitors to interact with your website in various creative ways.
+
+
+//  mosaic-->frist web browser-->1993--Netscape Navigator-->1994.
+
+//  ES6-->  it's a updated version of JavaCsript in 2015.
+
+//  ECMA Script-->  Of JavaScript oficially named ECMA Script.
 
 
 
+//  DOUBT SESSION CLASS :-
 
-
-
-//  DOUBT SESSION :-
 
 //  (var) :-
 
@@ -178,7 +179,7 @@ console.log(name);  //  Output = Error
 
 
 //  DataType :-  Number,String
-//  Check the DataType with help Of (typeof) keyword
+//  Check the DataType with the help Of (typeof) keyword
 
 //  Any variable name we cannot use start with a (Number)
 //  Ex:-  var 50name = "Amzad" /  var 12name = "Amzad"
@@ -196,3 +197,5 @@ console.log(name);  //  Output = Error
 
 
 //  NaN = Not a Number
+
+//  Modulo Operator gives the value only Reminder.
