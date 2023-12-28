@@ -1,23 +1,27 @@
+//  ** HIGHER-ORDER-FUNCTION-NOTES **
+
+
+
 // Callback functions
+
 // A callback function is a function that is passed as an argument to another function, to be “called back” at a later time.
 
 // Lets take a look at an example to see what this means in more detail.
 
-// Example:
+// Example:-
 
-// function sum(x, y, callBack){
-//     var total = x + y
-//     callBack(total)
-// }
+function sum(x, y, callBack){
+    var total = x + y
+    callBack(total)
+}
 
-// var print = function(toPrint){
-//     console.log(toPrint)
-// }
+var print = function(toPrint){
+    console.log(toPrint)
+}
 
-// sum(4, 5, print)
-// Output:
+sum(4, 5, print)
+// Output: 9
 
-// 9
 // As you can see we passed the print function as an argument to the sum function. First the sum function calculated the sum of x and y and then the print function was called after the sum was calculated to print the sum to the console.
 
 // Higher Order Functions
@@ -25,10 +29,10 @@
 
 // Here are some commonly used inbuilt methods for arrays.
 
-// array.forEach()
-// array.map()
-// array.filter()
-// array.reduce()
+array.forEach()
+array.map()
+array.filter()
+array.reduce()
 // each of these takes an argument.
 
 // forEach:
@@ -37,9 +41,9 @@
 
 // Syntax
 
-// array.forEach(function(element){
-//     console.log(element)
-// })
+array.forEach(function(element){
+    console.log(element)
+})
 // array.forEach(function(currentElement, currentIndex, array){...})
 // // It takes a function as an argument
 // // currentElement
