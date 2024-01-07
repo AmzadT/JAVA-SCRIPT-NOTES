@@ -247,7 +247,7 @@ for(let i = 1; i <= 5; i++)
 
 
 // argument and parameter
-// name = "Priya"
+// name = "Amzad"
 
 // name is parameter 
 // it represent the value that the function expect to recieve when it declared
@@ -294,8 +294,7 @@ add(a,b);
 
 
 
-//return will send the value back to the caller
-// after return no code will run inside function
+// return will send the value back to the caller function after returning, No code will run inside the function beacuse function is End.
 
 function sub(x,y) // declaration
 {
@@ -460,3 +459,257 @@ for(let i = 0;  i < 26; i++)
 {
   // logic
 }
+
+
+
+
+
+
+
+//  Callback Function :-
+
+// A Callback is a function passed as an argument to another function.
+
+// A Callback function can run after another function has finished.
+
+function Dishplay(result)
+{
+  console.log(result);
+}
+
+function Add(num1,num2,MyCallBack)
+{
+  var sum = num1 + num2;
+  MyCallBack(sum);
+}
+
+Add(10,5,Dishplay);  // output = 15
+
+
+
+//  Anonymous Function :-
+
+// Anonymous functions in JavaScript, are functions that are not Declared with a name.
+
+// function (parameter)
+// {
+//    write code here...
+// }
+
+
+// function()
+// {
+//   console.log("Hello JavaScript");
+// }
+// ();
+
+(
+  function()
+  {
+    console.log("Amzad Hussain");
+  }
+)();
+
+
+//  Function Expression / Anonumous Function :-
+
+var sum = function(x,y)
+{
+  return x+y;
+}
+
+var result = sum(10,15);
+console.log(result);
+
+
+setTimeout(function(){
+  console.log("Hello Amzad");
+},2000)
+
+
+
+//  Recursive Functions :-
+
+// A Recursive function in JavaScript is a function that calls itself.
+
+function MyFunction()
+{
+  if(conditions)
+  {
+    MyFunction();
+  }
+  else
+  {
+    // Stop Calling Recursion
+  }
+}
+
+MyFunction();
+
+
+function countDown(num)
+{
+  console.log(num);
+  num--;
+
+  if(num>=0)
+  {
+    countDown(num);
+  }
+}
+
+countDown(10);
+
+
+
+
+
+
+
+// Problem-2
+// Write code to find the absolute difference of two numbers
+
+// Sample Input-1 12,4
+// Sample Output-1 8
+// Sample Input-2 4,18
+// Sample Output-2 14
+// NOTE: It must consist of two functions 1. To find the difference 2. To find the absolute value
+
+ function absDiff(diff)
+ {
+if(diff < 0)
+  {
+    return -diff;
+  }
+  else
+  {
+    return diff;
+  }
+}
+
+function print(a,b)
+{
+  var sub = a - b;
+  var result = absDiff(sub);
+  console.log(result);
+}
+
+print(4,12)
+
+
+
+
+var diff = 5-10;
+
+if(diff < 0)
+{
+  console.log(-diff);
+}
+else
+{
+  console.log(diff);
+}
+
+
+
+var diff = 5-10;
+
+if(diff < 0)
+{
+  console.log(-1(diff));
+}
+else
+{
+  console.log(diff);
+}
+
+
+
+
+// Sample Input ["MA", "SA", "I", "SCH", "OOL"]
+// Sample Output ["ma", "sa", "i", "sch", "ool"]
+
+var Str = "APPLE"; // apple
+var upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+var lowerCase = "abcdefghijklmnopqrstuvwxyz"
+
+var Ans = "";
+for(var i = 0;  i < Str.length; i++)
+  {
+    var char = Str[i];
+    for(var j = 0;  j < upperCase; j++)
+      {
+        if(char == upperCase[j])
+        {
+          Ans += lowerCase[j];
+          break;
+      }
+  }
+  }
+console.log(Ans);
+
+
+
+
+
+// Sample Input ["Ma", "sA", "I", "SCH", "OOL"]
+// Sample Output ["ma", "sa", "i", "sch", "ool"]
+
+function convertLowerCase(char)
+{
+let uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+let lowercase = "abcdefghijklmnopqrstuvwxyz";
+  let Newchar = "";
+  for(let i = 0;  i < uppercase; i++)
+    {
+      if(char == uppercase[i])
+      {
+        Newchar = lowercase[i]
+      }
+      
+    }
+
+  return Newchar;
+}
+
+function main(arr)
+{
+  let output = [];
+  for(let i = 0; i < arr.length; i++)
+    {
+      let str = arr[i];
+      let bag = "";
+      for(let j = 0;  j < str.length; j++)
+        {
+          let EachChar = convertLowerCase(str[j])
+          bag += EachChar;
+        }
+      output.push(bag);
+    }
+  console.log(output)
+}
+
+main(["MA", "SA", "I", "SCH", "OOL"]);
+
+
+
+
+// For Only one character 
+function convertLowerCase(char)
+{
+let uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+let lowercase = "abcdefghijklmnopqrstuvwxyz";
+  let Newchar = "";
+  for(let i = 0;  i < uppercase; i++)
+    {
+      if(char == uppercase[i])
+      {
+        Newchar = lowercase[i]
+      }
+      
+    }
+
+  return Newchar;
+}
+
+console.log(convertLowerCase("A"));

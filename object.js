@@ -368,3 +368,134 @@ console.log(result)
 
 // keys are Unique, always a string
 
+
+
+
+
+
+
+
+//  Objects in JavaScript :-
+
+// JavaScript object is a non primitive Data-Type that allows you to store multiple collections of Data.
+
+// "Key-Value" pairs are called 'Properties'.
+
+var Details = {
+  first_name: "Amzad",
+  last_name: "Hussain",
+  age: 23
+};
+
+console.log(Details);
+
+// When we declare a function as a Key-Value pair then it is known as 'Methods'.
+
+
+// How to access the properties of an object.
+
+// 1. Dot Notaion
+console.log(Details.first_name);
+
+// 2. Bracket Notation
+console.log(Details["last_name"]);
+
+
+
+// If i write Keys in double quotes after that i want to print any value of an object with the help of "Dot Notaion" then it will give the Error.
+
+// For Example :-
+var Details = {
+  "first_name": "Amzad",
+  last_name: "Hussain",
+  age: 23
+};
+
+console.log(Details.first_name); // output = Error
+// So "Bracket Notaion" is always usfull to access any properties an object.
+
+
+//  How to Update the properties of an object.
+
+Details.first_name = "Mr. Amzad";
+Details["first_name"] = "Mr. Amzad";
+
+
+//  How to add a new properties in the object.
+
+Details.Hobbies = "Coding";
+Details["Smoking"] = false;
+
+
+//  How to Deleting a properties of an Object.
+
+delete Details.age;
+delete Details["Smoking"];
+
+
+//  Object inside Object / Nested Object.
+
+var Details = {
+  "first_name": "Amzad",
+  last_name: "Hussain",
+  age: 23,
+
+  Address: {
+    City: "Siwan",
+    State: "Bihar",
+    Pin_Code: "841226",
+  }
+};
+
+// Access
+console.log(Details.Address.Pin_Code);
+console.log(Details["Address"]["City"]);
+
+
+// How to Checking if a properties exists in an Object or Not.
+
+console.log("age" in Details); // Output = true/false
+
+
+//  for..in loop :-
+
+//  The for..in loop allows you to access each property and value of an object wtithout knowing the specific name of the property.
+
+//  Create this Object from "Literal".
+var Details = {
+  "first_name": "Amzad",
+  last_name: "Hussain",
+  age: 23
+};
+
+for(var key in Details)
+{
+  console.log(key); // Print Only Keys
+}
+
+for(var key in Details)
+{
+  console.log(Details[key]); // Print Only Values
+}
+
+for(var key in Details)
+{
+  console.log(key+":"+Details[key]); // Print Key:value Both
+}
+
+
+//  Create an Object with "new" Keyword.
+
+var Person = new Object();
+
+// Add Key:Value for this Object.
+Person.Name = "Amzad Hussain";
+Person.Age = 23;
+console.log(Person);
+
+// Creating As it is for this way.
+var Person = new Object({
+  Name : "Amzad Hussain",
+  Age : 23,
+});
+console.log(Person);

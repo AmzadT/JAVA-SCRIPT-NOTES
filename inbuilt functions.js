@@ -48,3 +48,93 @@ console.log(iterator1.next().value);
 
 
 
+
+
+// const elements = ['Fire', 'Air', 'Water'];
+// // arr to string
+
+// console.log(elements.join());
+// // Expected output: "Fire,Air,Water"
+
+// console.log(elements.join(' '));
+// // Expected output: "FireAirWater"
+
+// console.log(elements.join('*'));
+
+
+function MyJoin(arr,separator)
+{
+  let result = "";
+
+  for(let i = 0; i < arr.length; i++)
+    {
+      result += arr[i]
+      if( i !== arr.length - 1)
+      {
+        result += separator
+      }
+    }
+  console.log(result)
+}
+
+MyJoin(['Fire', 'Air', 'Water'],"-");
+
+
+
+
+
+const animals = ['Dodo', 'Tiger', 'Penguin', 'Dodo'];
+
+console.log(animals.lastIndexOf('Dodo'));
+// Expected output: 3
+
+console.log(animals.lastIndexOf('Tiger'));
+// Expected output: 1
+console.log(animals.lastIndexOf('elephant'));
+
+
+
+
+
+let arr = ["A","B","C","D","E"];
+// end is not included
+console.log(arr.slice(1,4));
+console.log(arr.slice(2));
+console.log(arr.slice(-1));
+
+
+
+
+
+// split
+let str = "I am a student";
+let Arr = str.split(" ")
+
+console.log(Arr[2])
+
+
+
+
+
+//  Local and Global variables :-
+
+//global scope
+
+let globalVar = 10;
+
+function myFunction()
+{
+  // console.log(globalVar);
+}
+myFunction()
+
+// local scope
+
+function myFunction2()
+{
+  let localVar = 5; // local scope
+  console.log(localVar);
+}
+
+myFunction2()
+console.log(localVar)
